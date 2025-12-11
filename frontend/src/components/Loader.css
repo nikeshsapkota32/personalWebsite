@@ -1,0 +1,197 @@
+/* Loader Styles */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.loader-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  z-index: 10;
+}
+
+/* Logo */
+.loader-logo {
+  display: flex;
+  gap: 10px;
+  font-family: var(--font-primary);
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+.logo-letter {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 30px rgba(0, 212, 255, 0.5));
+}
+
+/* Loading Bar */
+.loader-bar-container {
+  width: 200px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.loader-bar {
+  height: 100%;
+  background: var(--gradient-primary);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+}
+
+/* Loading Text */
+.loader-text {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  letter-spacing: 2px;
+}
+
+/* Particles */
+.loader-particles {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: var(--primary);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--primary);
+}
+
+/* Orbit Rings */
+.orbit-rings {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  pointer-events: none;
+}
+
+.orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  border-radius: 50%;
+}
+
+.orbit::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: var(--primary);
+  border-radius: 50%;
+  box-shadow: 0 0 15px var(--primary);
+}
+
+.orbit-1 {
+  width: 200px;
+  height: 200px;
+}
+
+.orbit-1::before {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.orbit-2 {
+  width: 280px;
+  height: 280px;
+  border-color: rgba(124, 58, 237, 0.2);
+}
+
+.orbit-2::before {
+  background: var(--secondary);
+  box-shadow: 0 0 15px var(--secondary);
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.orbit-3 {
+  width: 360px;
+  height: 360px;
+  border-color: rgba(0, 255, 136, 0.15);
+}
+
+.orbit-3::before {
+  background: var(--accent);
+  box-shadow: 0 0 15px var(--accent);
+  width: 8px;
+  height: 8px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Background Blobs */
+.loader-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.bg-blob {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.4;
+}
+
+.blob-1 {
+  top: -200px;
+  right: -200px;
+  background: var(--primary);
+}
+
+.blob-2 {
+  bottom: -200px;
+  left: -200px;
+  background: var(--secondary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .loader-logo {
+    font-size: 3.5rem;
+  }
+
+  .loader-bar-container {
+    width: 150px;
+  }
+
+  .orbit-rings {
+    width: 200px;
+    height: 200px;
+  }
+
+  .orbit-1 { width: 120px; height: 120px; }
+  .orbit-2 { width: 180px; height: 180px; }
+  .orbit-3 { width: 240px; height: 240px; }
+}

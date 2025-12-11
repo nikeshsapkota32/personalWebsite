@@ -4,9 +4,10 @@ import { useInView } from 'react-intersection-observer';
 import { 
   SiReact, SiNodedotjs, SiMongodb, SiExpress, SiJavascript, 
   SiTypescript, SiPython, SiPostgresql, SiMysql, SiDocker,
-  SiGit, SiRedis, SiAmazonaws, SiFirebase, SiGraphql,
+  SiGit, SiRedis, SiFirebase, SiGraphql,
   SiTailwindcss, SiBootstrap, SiHtml5, SiCss3, SiNextdotjs
 } from 'react-icons/si';
+import { FaAws } from 'react-icons/fa';
 import './TechStack.css';
 
 const TechStack = () => {
@@ -26,7 +27,7 @@ const TechStack = () => {
     { name: 'Docker', icon: <SiDocker />, color: '#2496ED' },
     { name: 'Git', icon: <SiGit />, color: '#F05032' },
     { name: 'Redis', icon: <SiRedis />, color: '#DC382D' },
-    { name: 'AWS', icon: <SiAmazonaws />, color: '#FF9900' },
+    { name: 'AWS', icon: <FaAws />, color: '#FF9900' },
     { name: 'Firebase', icon: <SiFirebase />, color: '#FFCA28' },
     { name: 'GraphQL', icon: <SiGraphql />, color: '#E10098' },
     { name: 'Tailwind', icon: <SiTailwindcss />, color: '#06B6D4' },

@@ -1,7 +1,7 @@
 // CloudTaskDemo.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
-import { HiArrowLeft, HiCheckCircle, HiClock, HiUsers } from 'react-icons/hi';
+import { HiArrowLeft } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
 import './DemoStyles.css';
 

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { 
   HiShoppingCart, HiHeart, HiSearch, HiUser, HiStar,
-  HiPlus, HiMinus, HiArrowLeft
+  HiPlus, HiArrowLeft
 } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
 import './DemoStyles.css';

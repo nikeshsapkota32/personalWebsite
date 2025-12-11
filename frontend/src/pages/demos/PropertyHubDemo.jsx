@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { HiArrowLeft, HiLocationMarker, HiHome, HiHeart } from 'react-icons/hi';
+import { HiArrowLeft, HiHeart } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
 import './DemoStyles.css';
 

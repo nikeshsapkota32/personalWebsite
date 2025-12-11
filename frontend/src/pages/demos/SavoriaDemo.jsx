@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { HiArrowLeft, HiClock, HiLocationMarker, HiPhone } from 'react-icons/hi';
+import { HiArrowLeft } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
 import './DemoStyles.css';
 

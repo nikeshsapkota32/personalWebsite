@@ -4,6 +4,7 @@ import Hero from '../components/Hero';
 import AboutPreview from '../components/AboutPreview';
 import ProjectsShowcase from '../components/ProjectsShowcase';
 import SkillsSection from '../components/SkillsSection';
+import TechStack from '../components/TechStack';
 import TestimonialsSection from '../components/TestimonialsSection';
 import CTASection from '../components/CTASection';
 
@@ -19,6 +20,7 @@ const Home = () => {
       <AboutPreview />
       <ProjectsShowcase />
       <SkillsSection />
+      <TechStack />
       <TestimonialsSection />
       <CTASection />
     </motion.main>

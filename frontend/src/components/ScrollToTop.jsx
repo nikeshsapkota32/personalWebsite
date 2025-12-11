@@ -5,10 +5,17 @@ import './ScrollToTop.css';
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
     const toggleVisibility = () => {
-      if (window.pageYOffset > 300) {
+      const scrolled = window.pageYOffset;
+      const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const progress = (scrolled / windowHeight) * 100;
+      
+      setScrollProgress(progress);
+      
+      if (scrolled > 300) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -38,7 +45,22 @@ const ScrollToTop = () => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          <HiArrowUp />
+          <svg className="progress-ring" width="60" height="60">
+            <circle
+              className="progress-ring-circle"
+              stroke="var(--primary)"
+              strokeWidth="3"
+              fill="transparent"
+              r="26"
+              cx="30"
+              cy="30"
+              style={{
+                strokeDasharray: `${2 * Math.PI * 26}`,
+                strokeDashoffset: `${2 * Math.PI * 26 * (1 - scrollProgress / 100)}`,
+              }}
+            />
+          </svg>
+          <HiArrowUp className="scroll-icon" />
           <span className="scroll-glow" />
         </motion.button>
       )}

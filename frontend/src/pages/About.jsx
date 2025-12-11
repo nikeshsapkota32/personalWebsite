@@ -88,11 +88,10 @@ const About = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6 }}
             >
-              <div className="image-wrapper">
-                <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop" 
-                  alt="Nikesh Sapkota" 
-                />
+              <div className="image-wrapper avatar-placeholder">
+                <div className="avatar-initials">
+                  <span>NS</span>
+                </div>
                 <div className="image-border" />
               </div>
               <div className="experience-badge">

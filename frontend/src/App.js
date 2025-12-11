@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import CustomCursor from './components/CustomCursor';
 import Loader from './components/Loader';
 import ScrollToTop from './components/ScrollToTop';
+import LoadingBar from './components/LoadingBar';
 
 // Pages
 import Home from './pages/Home';
@@ -92,6 +93,9 @@ function App() {
 
       {/* Navigation */}
       <Navbar />
+
+      {/* Loading Bar */}
+      <LoadingBar />
 
       {/* Scroll to Top */}
       <ScrollToTop />

@@ -1,0 +1,12 @@
+/* Loading Bar */
+.loading-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--gradient-primary);
+  transform-origin: left;
+  z-index: 9999;
+  box-shadow: 0 0 15px var(--primary), 0 0 30px var(--primary);
+}
